@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors  */
+    --background: #f0f0f0;
+    --borders: #9fa4a8;
+    --white: #fff;
+    --before-icons: #3498db;
+    --after-icons: #2ecc71;
+    --button-color : #91989e;
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1 {
+    margin: 50px 0 30px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.faq-container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.faq {
+    background: transparent;
+    border: 1px solid var(--borders);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px 20px;
+    position: relative;
+    overflow: hidden;
+    transform: all ease 1s;
+}
+
+.faq.active {
+    background-color: var(--white);
+    box-shadow: 0 3px 6px rgba(0.0.0.0.1), 0 3px 6px rgba(0.0.0.0.1);
+
+}
+
+.faq.active::before,
+.faq.active::after {
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 7rem;
+    opacity: 0.2;
+    color: var(--after-icons);
+    z-index: 0;
+}
+
+.faq.active::before{
+    color: var(--before-icons);
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.faq.title{
+    margin: 0 30px 0 0 ;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0 ;
+}
+
+.faq.active .faq-text {
+    display :block; 
+}
+
+.faq-toggle {
+    width:30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 15px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-toggle .fa-xmark{
+    display: none;
+}
+
+.faq.active .faq-toggle .fa-xmark {
+    color: var(--white);
+    display: block;
+}
+
+.faq.active .faq-toggle .fa-angle-down {
+    display: none;
+}
+
+.faq.active .faq-toggle {
+    background-color: var(--borders);
+}
+
