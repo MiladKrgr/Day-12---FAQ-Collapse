@@ -1,4 +1,4 @@
-# Project FAQ-Collapse - پروژه رویداد کلیدهای کیبورد 💻
+# Project FAQ-Collapse - پروژه آکاردئون سوالات متداول 💻
 (HTML5 + CSS3 + Vanilla JS)
 
 
@@ -88,7 +88,7 @@ cd "Day 12 - FAQ Collapse"
 # _______________
 
 
-# Project Event KeyCodes 💻
+# Project FAQ Collapse 💻
 (HTML5 + CSS3 + JavaScript)
 
 ---
